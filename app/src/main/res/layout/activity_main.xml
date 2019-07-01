@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入tag"
+        android:inputType="text"
+        android:text="chat_doc_1"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入id"
+        android:inputType="number"
+        android:text="1"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onPostNotification"
+        android:text="发送通知" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClearNotification"
+        android:text="清除通知" />
+
+</LinearLayout>
